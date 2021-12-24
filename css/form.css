@@ -52,7 +52,27 @@
 
   .button:hover {
       background-color: white;
+      
   }
+
+
+  .button-secondary {
+    background-color: var(--Background-body);
+    color: white;
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 13px;
+    padding-block-end: 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: var(--Main-Family);
+    border: none;
+}
+
   
 #trucazo{
     opacity: 0%;
@@ -64,17 +84,16 @@
   }
 
   .contact-flex {
-      display: flex;
-      flex-direction: column;
-      border-radius: 10px;
-      padding: 30px;
-      background-image: url("/images/background-contact.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 30px;
+    background-image: url("/images/background-contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     }
-  }
-
 
   .contact-image {
       width: 100%;

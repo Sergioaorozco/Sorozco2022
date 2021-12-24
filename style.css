@@ -1,6 +1,7 @@
 @import url("css/footer.css");
 @import url("css/social.css");
 @import url('css/form.css');
+@import url('/css/portfolio.css');
 
 
 
@@ -14,7 +15,7 @@
 }
 
 
-body, p, h1 ,h2, h3, div, ul {
+body, p, h1 ,h2, h3, h4, div, ul {
     margin: 0;
     padding: 0;
 }
@@ -152,29 +153,15 @@ h2 {
     justify-content: center;
   }
 
-  .carrousel {
-      width: 100%;
-      height: auto;
-      overflow-x: auto;
-      overflow-y:hidden;
-  }
-  
-  .carrousel-item {
-    list-style: none;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
-
-.carrousel-item img {
-    width: 300px;
-    height: auto;
-}
-
 
 
 /* Media Queries Section */
 
 @media only screen and (min-width: 600px) {
+
+    .portfolio img {
+        min-inline-size:70px;
+    }
     
     .contact-image {
         text-align: center;
@@ -189,7 +176,6 @@ h2 {
     }
 
     .contact-flex {
-        margin-top: 1em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -197,6 +183,8 @@ h2 {
 
     }
 }
+
+
 
 
 @media only screen and (min-width: 768px) {
