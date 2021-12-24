@@ -54,6 +54,7 @@ h2 {
 .header {
     background: var(--Header-color);
     padding-block: 6px;
+    margin-top: 4px;
 }
 
 .button-primary {
