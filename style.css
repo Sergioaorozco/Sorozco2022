@@ -175,11 +175,26 @@ h2 {
 /* Media Queries Section */
 
 @media only screen and (min-width: 600px) {
+    
+    .contact-image {
+        text-align: center;
+    }
+
+
     .skills{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         padding-bottom: 2rem;
         justify-content: center;
+    }
+
+    .contact-flex {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
     }
 }
 
@@ -188,6 +203,5 @@ h2 {
     .skills{
         grid-template-columns: repeat(3,1fr);
     }
-
 }
 
