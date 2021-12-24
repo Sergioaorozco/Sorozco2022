@@ -1,0 +1,191 @@
+@import url("css/footer.css");
+@import url("css/social.css");
+
+
+:root {
+    --LightColor: white;
+    --Background-body:#081430;
+    --Background-skill:rgb(238, 234, 228);
+    --Header-color:#07132e8e;
+    --Main-Family: 'Source Sans Pro', sans-serif;
+    --Accent-color: #37dde9ec; 
+}
+
+
+body, p, h1 ,h2, h3, div, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Background-body);
+    font-family: var(--Main-Family);
+    min-height: 100vh;
+}
+
+h2 {
+    color: var(--LightColor);
+}
+
+.flex {
+    display: inline-flex;
+    gap: 15px;
+}
+
+.wrapper {
+    max-inline-size: 1158px;
+    padding-block-end: 6px;
+    padding-block-start: 6px;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    margin: auto;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 3px;
+}
+
+.header {
+    background: var(--Header-color);
+    padding-block: 6px;
+}
+
+.button-primary {
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 13px;
+    padding-block-end: 13px;
+    background-color: var(--Accent-color);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--Background-body);
+    font-weight: 600;
+    transition: all 0.2s ease-in;
+}
+
+.button-primary::before {
+    content: url(images/arrow-alt-circle-down.svg);
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.button-primary:hover {
+    background-color: white;
+    transition: all 0.2s ease-in;
+}
+
+.cards-skills {
+    padding-block: 3px;
+    padding-inline: 15px;
+    background-image: url("images/cardsbg.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #ffffff;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    color: var(--Background-body);
+}
+
+.cards-skills:hover {
+    background-blend-mode:multiply;
+    background-color: #dddddd;
+}
+
+.cards-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cards-content img {
+    width: 80px;
+    height: 80px;
+}
+
+.skills {
+    margin-top: 1em;
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+}
+.hero {
+    background-image: url("images/Main-hero-Bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    display: flex;
+    aspect-ratio: 16/9;
+}
+
+.hero h1 {
+    width: 50%;
+    line-height: 1;
+    padding-bottom: 20px;
+}
+
+.max-inline {
+    max-inline-size: 1158px;
+    padding-inline: 15px;
+}
+.divisor {
+    border: none;
+    border-bottom: 1px solid var(--LightColor);
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.social {
+    padding-block-end: 25px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .carrousel {
+      width: 100%;
+      height: auto;
+      overflow-x: auto;
+      overflow-y:hidden;
+  }
+  
+  .carrousel-item {
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.carrousel-item img {
+    width: 300px;
+    height: auto;
+}
+
+
+
+/* Media Queries Section */
+
+@media only screen and (min-width: 600px) {
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .skills{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+
