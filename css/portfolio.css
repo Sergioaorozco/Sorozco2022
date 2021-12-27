@@ -31,7 +31,10 @@
     margin: 0;
     padding: 7px;
     background-color: #123258f2;
+<<<<<<< HEAD
     border-top: 2px solid rgb(27, 124, 180);
+=======
+>>>>>>> 1d46095adf767449af4bf049a119970bc5c9176f
     align-items: flex-end;
     border-radius: 0 0 8px 8px;
     height: 4em;
