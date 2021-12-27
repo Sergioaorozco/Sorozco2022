@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,200;1,600&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 </head>
 
 <body>
@@ -95,23 +96,57 @@
             </div>
         </section>
         <section class=projects>
-            <h2>Portfolio</h2>
+            <h2>My Portfolio</h2>
             <hr class="divisor">
-            <!--Proyecto 1-->
-            <div class="portfolio" id="portfolio">
-                <img src="/images/ecommerce.png" alt="Imagen portfolio Purahome">
-                <div class="project">
-                    <h4>Pura Home - <span>Conceptual</span></h3>
-                        <p>Propuesta de diseño de un sitio web de comercio electrónico de productos de mobiliario y
-                            decoración para el hogar. Contiene 4 prototipos de alta fidelidad y una vista móvil del
-                            sitio.
-                            <span>Incluye: Design System y diagramas de flujo.</span>
-                        </p>
-                        <!-- <a target="_blank" href="#" class="button third">Ver código</a> -->
-                        <a target="_blank"
-                            href="https://www.figma.com/file/ZWv9QTsRyfoor4DqegGleh/Pura-Home-Propuesta-conceptual?node-id=0%3A1"
-                            class="button third">Ver en figma</a>
+            <div class="projects-carrousel">
+                <!--Project 1-->
+                <div class="project-card pura">
+                    <figure class="project-image">
+                        <h3>Pura Home - Conceptual</h3>
+                        <p class="project-description">furniture and Home decoration ecommerce website made in
+                            figma.</p>
+                    </figure>
                 </div>
+                <!--Project 2-->
+                <div class="project-card locutoralan">
+                    <figure class="project-image">
+                        <h3>Locutor Alan</span></h3>
+                        <p class="project-description">Professional Locutor Website updates using CSS and Less
+                            Frameworks.</p>
+                    </figure>
+                </div>
+                <!--Project 3-->
+                <div class="project-card redillaureles">
+                    <figure class="project-image">
+                        <h3>Redil Laureles</h3>
+                        <p class="project-description">Christian Baptist Church website redesign using WordPress and
+                            CSS.</p>
+                    </figure>
+                </div>
+                <!--Project 4-->
+                <div class="project-card alvelo">
+                    <figure class="project-image">
+                        <h3>Alvelo Grafico</h3>
+                        <p class="project-description">Graphic Design for Weddings using Figma, HTML and CSS.</p>
+                    </figure>
+                </div>
+                <!--Project 5-->
+                <div class="project-card caro-ux">
+                    <figure class="project-image">
+                        <h3>Carolina Buitrago</h3>
+                        <p class="project-description">Industrial and UX Designer Website portfolio. using HTML and CSS.
+                        </p>
+                    </figure>
+                </div>
+                <!--Project 6-->
+                <div class="project-card natalia-duque">
+                    <figure class="project-image">
+                        <h3>Natalia Duque - Logistics</h3>
+                        <p class="project-description">Website for selling home objects using WordPress.
+                        </p>
+                    </figure>
+                </div>
+
             </div>
         </section>
         <section class="contact" id="contact">
@@ -124,13 +159,12 @@
                         <form action="https://formspree.io/f/mleajqev" method="POST" class="form" id="form">
                             <div>
                                 <label for="form-name">Your Name *</label>
-                                <input required name="name" id="form-name" type="text"
-                                    placeholder="yourEmail@example.com">
+                                <input required name="name" id="form-name" type="text" placeholder="Type your name">
                             </div>
                             <div>
                                 <label for="form-email">Contact E-mail *</label>
                                 <input required name="email" id="form-email" type="email"
-                                    placeholder="Write here your E-mail">
+                                    placeholder="yourEmail@example.com">
                             </div>
                             <div>
                                 <label for="form-message">Your Message *</label>

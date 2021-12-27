@@ -1,44 +1,86 @@
-.portfolio {
+/* .portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
     margin-block-end: 30px;
     color: white;
-  }
+  } */
   
   .portfolio img {
     max-inline-size: 90%;
     block-size: auto;
   }
   
-  .portfolio-image {
-    text-align: end;
-  }
-  
-  .project {
-    max-inline-size: 600px;
+  .project-card {
     display: flex;
     flex-direction: column;
-    order: 1;
-    gap: 15px;
-    text-align: center;
+    justify-content: flex-end;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    color: white;
   }
-  
+
+  .project-image {
+    margin: 0;
+    padding: 7px;
+    background-color: #123258f2;
+    align-items: flex-end;
+    border-radius: 0 0 8px 8px;
+    height: 4em;
+  }
+
+  .project-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+  }
+
+.pura {
+  background-image: url(/images/project-pura.png);
+  background-position:bottom;
+}
+
+.locutoralan {
+   background-image: url(/images/project-locutoralan.jpg);
+}
+
+.redillaureles {
+  background-image: url(/images/project-redilalureles.jpg);
+}
+
+.alvelo {
+  background-image: url(/images/project-alvelo.jpeg);
+
+}
+
+.caro-ux {
+      background-image: url(/images/project-caroux.jpeg);
+  }
+
+.natalia-duque {
+    background-image: url(/images/project-natalia-duque.jpeg);
+}  
+ 
   .project span {
     font-style: italic;
     color: white;
   }
-  
-  .portfolio hr {
-    padding: 0;
-    border: 0;
-    height: 1px;
-    border-top: 1px solid rgba(63, 164, 223, 0.199);
-    width: 100%;
+
+  .projects-carrousel {
+    display: flex;
+    gap: 20px;
+    overflow: overlay;
+    margin-bottom: 2em;
   }
 
-  
   .portfolio h3 {
     margin: 0;
   }
