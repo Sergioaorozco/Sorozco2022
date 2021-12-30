@@ -126,12 +126,38 @@ h2 {
     align-items: flex-end;
     display: flex;
     aspect-ratio: 16/9;
+    margin-bottom: 10px;
+}
+
+.hero .description {
+    margin-top: 1.5em;
+    order:1;
+    font-size: 1em;
+    text-align: center;
+}
+
+.hero-container {
+    padding-inline: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-inline-size: 1158px;
+    margin: auto;
+}
+
+
+.hero-container  img{
+    order:2;
+    width: 80%;
 }
 
 .hero h1 {
-    width: 50%;
     line-height: 1;
-    padding-bottom: 20px;
+    color: white;
+}
+.hero h2 {
+    font-weight: 400;
+    font-size: 1.5em;
 }
 
 .max-inline {
@@ -157,8 +183,26 @@ h2 {
 
 
 /* Media Queries Section */
+@media only screen and (min-width: 600px) {
+
 
 @media only screen and (min-width: 600px) {
+
+    .hero-container  img{
+        width: 50%;
+    }
+
+    .hero-container {
+    flex-direction: row;
+    align-items: center;
+}
+
+    .hero .description {
+        margin: auto;
+        text-align: unset;
+    }
+
+
 
     .portfolio img {
         min-inline-size:70px;
@@ -190,6 +234,10 @@ h2 {
 
 @media only screen and (min-width: 768px) {
 
+    .hero .description {
+        font-size: 1.5em;
+    }
+
 
     .skills{
         grid-template-columns: repeat(3,1fr);
@@ -199,6 +247,11 @@ h2 {
 
 
 @media only screen and (min-width: 1025px) {
+
+    .hero .description {
+        font-size: 2em;
+    }
+
     .projects-carrousel {
         display: grid;
         grid-template-columns: repeat(3,1fr);
